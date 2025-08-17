@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* VinShik Dashboard Design System */
+
+@layer base {
+  :root {
+    --background: 218 23% 97%;
+    --foreground: 220 14% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 11%;
+
+    --primary: 175 83% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 9% 46%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 175 83% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 175 83% 39%;
+
+    --radius: 0.75rem;
+
+    /* VinShik Brand Colors */
+    --teal: 175 83% 39%;
+    --text: 205 20% 6%;
+    --text-muted: 217 10% 55%;
+    --surface: 0 0% 100%;
+    --surface-light: 0 0% 98%;
+    --bg-light: 220 14% 97%;
+    
+    /* Accent Colors for Charts */
+    --blue: 221 83% 59%;
+    --orange: 32 95% 46%;
+    --green: 142 76% 44%;
+    --purple: 262 83% 58%;
+    
+    /* Card Design Tokens */
+    --card-border: 217 16% 91%;
+    --chip-up-bg: 142 76% 94%;
+    --chip-down-bg: 0 79% 96%;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 9% 46%;
+    --sidebar-primary: 175 83% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 175 83% 39%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 175 83% 39%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
